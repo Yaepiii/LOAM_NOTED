@@ -1,0 +1,9 @@
+digraph G {
+"camera_init" -> "camera"[label="Broadcaster: /transformMaintenance\nAverage rate: 10.117 Hz\nMost recent transform: 1422133418.257 ( 269776285.702 sec old)\nBuffer length: 4.942 sec\n"];
+"camera_init" -> "laser_odom"[label="Broadcaster: /laserOdometry\nAverage rate: 10.117 Hz\nMost recent transform: 1422133418.257 ( 269776285.702 sec old)\nBuffer length: 4.942 sec\n"];
+"camera_init" -> "aft_mapped"[label="Broadcaster: /laserMapping\nAverage rate: 5.164 Hz\nMost recent transform: 1422133418.156 ( 269776285.803 sec old)\nBuffer length: 4.841 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1691909703.959"[ shape=plaintext ] ;
+ }->"camera_init";
+}
